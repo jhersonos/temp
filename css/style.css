@@ -36,6 +36,11 @@ img{
 
 header{
     padding:15px 0;   
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    z-index:9;
 }
 
 header ul{
@@ -66,6 +71,9 @@ header ul li.button-purple a{
 .flex{
     display: flex;
     
+}
+#home{
+    margin-top:55px;
 }
 #home img{
     width:100%;
@@ -183,6 +191,11 @@ header ul li.button-purple a{
 .moreCard{
     text-align: right;
 }
+.moreCard{
+    font-size: 18px;
+    font-family: 'neue-bold';
+    font-weight: bold;;
+}
 .item-center{
     align-items: center;
 }
@@ -192,6 +205,7 @@ header ul li.button-purple a{
 }
 #ebooks{
     background: #6802C1;
+    position:relative;
 }
 #ebooks .arr ul{
     max-width:42%;
@@ -253,6 +267,7 @@ header ul li.button-purple a{
     font-size: 45px;
     font-family: "neue-regular";
     font-weight: bold;
+    margin-top:0;
 }
 #eventos{
     background: #0202C6;
@@ -333,6 +348,9 @@ header ul li.button-purple a{
 .box-principal .whiteCard{
     background-color: #fff;
     padding:45px;
+}
+.box-secundario .whiteCard img{
+    display: flex;
 }
 .box-principal .cardInteres h3{
     font-size: 35px;
@@ -480,6 +498,9 @@ footer .redes a{
 footer .redes a:first-child{
     margin-left: 0;
 }
+.menu{
+    display: none;
+}
 @media (min-width:1680px){
     .container__{
     max-width: 1280px;
@@ -489,9 +510,139 @@ footer .redes a:first-child{
         background-position:initial;
     }
 }
-@media(max-width:768px){
-    .container__{
-    max-width: 1280px;
-    margin:auto;
+@media(max-width:1080px){
+    /*header{
+        position: relative;
+    }*/
+    
+    header ul {
+        display: block;
     }
+
+    header ul li{
+        margin-left:0;
+        padding:15px 15px;
+    }
+    header ul li:not(.logo__):not(.menu){
+        max-height: 0;
+        overflow: hidden;
+        padding:0;
+        transition:all .5s;
+    }
+    header ul.active li:not(.logo__):not(.menu){
+        max-height:100px;
+        padding:15px;
+        transition:all .5s;
+    }
+    .logo__{
+        position: absolute;
+        top: 5px;
+        left: -5px;
+        max-width: 200px;
+    }
+    .menu{
+        display: block;
+        text-align:right;
+    }
+}
+@media(max-width:768px){
+    #eventos .evento h3,#eventos h3,#interesar > div > h3{
+        font-size: 35px;
+    }
+    .box-principal .cardInteres h3{
+        line-height: 1.2;
+    }
+    .cardInteres{
+        margin-bottom: 20px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+    }
+    .control{
+        display:block;
+        text-align:center; 
+    }
+    #suscribe p{
+        line-height: 1.2;
+    }
+    .control button{
+        margin-top: 15px;
+    }
+    footer .flex > div{
+        max-width: 100%;
+    }
+    footer .purple_clasic, footer .blue_clasic{
+        padding: 35px;
+    }
+    footer p{
+        font-size:25px;
+    }
+    footer .redes{
+        display: flex;
+    }
+    .cardEvent p{
+        font-size:18px;
+    }
+    .box-principal .cardInteres{
+        padding: 10px;
+    }
+    .container__{
+        max-width: 90%;
+        margin:auto;
+    }
+    .cardEvent{
+        padding:20px;
+        left:0;
+    }
+    .cardEvent a.flex{
+        display:flex;
+    }
+    .flex{
+        display: block;
+    }
+    
+    #home img{
+        display: flex;
+    }    
+    #home img,#home .flex > div{
+        max-width:100%;
+    }
+    .text-box{
+        padding: 35px;
+    }
+    .text-box h2 {
+        font-size: 35px;
+    }
+    .text-box h3 {
+        font-size: 28px;
+    }
+    #centro{
+        padding:50px 0;
+    }
+    #centro h3{
+        font-size: 35px;
+        line-height: 1;;
+    }
+    .moreCard .flex{
+        display:flex;
+    }
+    #ebooks img{
+        position: absolute;
+        max-width: 100px;
+        top: 0;
+    }
+    .ebook-list{
+        max-width: 90%;
+        margin-left:0;
+        margin:0 auto;
+    }
+    #ebooks .arr ul {
+        max-width: 100%;
+    }
+}
+@media(max-width:468px){
+    .title-box h3,.title-box h3 span{
+        font-weight: bold;
+        font-size:35px;
+        display:block;
+    }
+
 }

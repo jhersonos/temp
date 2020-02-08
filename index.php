@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php wp_head(); ?>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>continental</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title><?php bloginfo('name'); echo " | "; bloginfo('description') ?></title>
+    <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/css/style.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
 </head>
@@ -14,7 +15,8 @@
         <div class="container__">
             <nav>
                 <ul>
-                    <li class="logo__"><a><img src="img/logo.png" alt="logo continental"></a></li>
+                    <li class="menu"><a href="#"><img src="<?php bloginfo('template_directory');?>/img/menu.png" alt="menu"></a></li>
+                    <li class="logo__"><a><img src="<?php bloginfo('template_directory');?>/img/logo.png" alt="logo continental"></a></li>
                     <li><a href="#">home</a></li>
                     <li><a href="#">acerca del centro</a></li>
                     <li><a href="#">portafolios</a></li>
@@ -27,7 +29,7 @@
     </header>
     <div id="home">
         <div class="flex">
-            <img src="img/home.png" alt="centro">
+            <img src="<?php bloginfo('template_directory');?>/img/home.png" alt="centro">
             <div>
                 <div class="text-box">
                     <h2>CENTRO<br> UC 4.0</h2>
@@ -49,7 +51,7 @@
                         Este hecho está modificando el mercado laboral...
                     </p>
                 </div>
-                <img src="img/centro.png" alt="acerca del centro">
+                <img src="<?php bloginfo('template_directory');?>/img/centro.png" alt="acerca del centro">
             </div>
         </div>
     </div>
@@ -73,7 +75,7 @@
                 <div>
                     <div class="card">
                         <div class="headCard">                            
-                            <img src="img/portafolio.png">
+                            <img src="<?php bloginfo('template_directory');?>/img/portafolio.png">
                         </div>
                         <div class="bodyCard">
                             <h3>Programa de Especialización en Transformación Digital</h3>
@@ -84,7 +86,7 @@
                                 liderar la transformación digital en una organización.
                             </p>
                             <div class="moreCard">
-                                <a class="flex item-center"><span>Ver más </span><img src="img/mas.png"></a>
+                                <a class="flex item-center"><span>Ver más </span><img src="<?php bloginfo('template_directory');?>/img/mas.png"></a>
                             </div>
                         </div>
                     </div>
@@ -92,7 +94,7 @@
                 <div>
                     <div class="card">
                         <div class="headCard">                            
-                            <img src="img/portafolio.png">
+                            <img src="<?php bloginfo('template_directory');?>/img/portafolio.png">
                         </div>
                         <div class="bodyCard">
                             <h3>Programa de Especialización en Transformación Digital</h3>
@@ -103,7 +105,7 @@
                                 liderar la transformación digital en una organización.
                             </p>
                             <div class="moreCard">
-                                <a class="flex item-center"><span>Ver más </span><img src="img/mas.png"></a>
+                                <a class="flex item-center"><span>Ver más </span><img src="<?php bloginfo('template_directory');?>/img/mas.png"></a>
                             </div>
                         </div>
                     </div>
@@ -111,7 +113,7 @@
                 <div>
                     <div class="card">
                         <div class="headCard">                            
-                            <img src="img/portafolio.png">
+                            <img src="<?php bloginfo('template_directory');?>/img/portafolio.png">
                         </div>
                         <div class="bodyCard">
                             <h3>Programa de Especialización en Transformación Digital</h3>
@@ -122,7 +124,7 @@
                                 liderar la transformación digital en una organización.
                             </p>
                             <div class="moreCard">
-                                <a class="flex item-center"><span>Ver más </span><img src="img/mas.png"></a>
+                                <a class="flex item-center"><span>Ver más </span><img src="<?php bloginfo('template_directory');?>/img/mas.png"></a>
                             </div>
                         </div>
                     </div>
@@ -132,7 +134,7 @@
     </div>
     <div id="ebooks">
         <div class="flex">
-            <img src="img/ebook.png" alt="">
+            <img src="<?php bloginfo('template_directory');?>/img/ebook.png" alt="">
             <div class="ebook-list">
                 <h3>Nuestros ebooks</h3>
                 <p>
@@ -173,7 +175,7 @@
                 <div>
                     <div class="card">
                         <div class="headCard">                            
-                            <img src="img/proyecto.png">
+                            <img src="<?php bloginfo('template_directory');?>/img/proyecto.png">
                         </div>
                         <div class="bodyCard">
                             <h3>Programa de Especialización en Transformación Digital</h3>
@@ -184,7 +186,7 @@
                                 liderar la transformación digital en una organización.
                             </p>
                             <div class="moreCard">
-                                <a class="flex item-center"><span>Ver más </span><img src="img/mas.png"></a>
+                                <a class="flex item-center"><span>Ver más </span><img src="<?php bloginfo('template_directory');?>/img/mas.png"></a>
                             </div>
                         </div>
                     </div>
@@ -192,7 +194,7 @@
                 <div>
                     <div class="card">
                         <div class="headCard">                            
-                            <img src="img/proyecto.png">
+                            <img src="<?php bloginfo('template_directory');?>/img/proyecto.png">
                         </div>
                         <div class="bodyCard">
                             <h3>Programa de Especialización en Transformación Digital</h3>
@@ -203,7 +205,7 @@
                                 liderar la transformación digital en una organización.
                             </p>
                             <div class="moreCard">
-                                <a class="flex item-center"><span>Ver más </span><img src="img/mas.png"></a>
+                                <a class="flex item-center"><span>Ver más </span><img src="<?php bloginfo('template_directory');?>/img/mas.png"></a>
                             </div>
                         </div>
                     </div>
@@ -211,7 +213,7 @@
                 <div>
                     <div class="card">
                         <div class="headCard">                            
-                            <img src="img/proyecto.png">
+                            <img src="<?php bloginfo('template_directory');?>/img/proyecto.png">
                         </div>
                         <div class="bodyCard">
                             <h3>Programa de Especialización en Transformación Digital</h3>
@@ -222,7 +224,7 @@
                                 liderar la transformación digital en una organización.
                             </p>
                             <div class="moreCard">
-                                <a class="flex item-center"><span>Ver más </span><img src="img/mas.png"></a>
+                                <a class="flex item-center"><span>Ver más </span><img src="<?php bloginfo('template_directory');?>/img/mas.png"></a>
                             </div>
                         </div>
                     </div>
@@ -230,7 +232,7 @@
                 <div>
                     <div class="card">
                         <div class="headCard">                            
-                            <img src="img/proyecto.png">
+                            <img src="<?php bloginfo('template_directory');?>/img/proyecto.png">
                         </div>
                         <div class="bodyCard">
                             <h3>Programa de Especialización en Transformación Digital</h3>
@@ -241,7 +243,7 @@
                                 liderar la transformación digital en una organización.
                             </p>
                             <div class="moreCard">
-                                <a class="flex item-center"><span>Ver más </span><img src="img/mas.png"></a>
+                                <a class="flex item-center"><span>Ver más </span><img src="<?php bloginfo('template_directory');?>/img/mas.png"></a>
                             </div>
                         </div>
                     </div>
@@ -258,14 +260,14 @@
                     <div>
                         <div class="evento">
                             <div class="flex">
-                                <img src="img/evento.png" alt="evento">
+                                <img src="<?php bloginfo('template_directory');?>/img/evento.png" alt="evento">
                                 <div class="cardEvent">
                                     <h3>Perú 4.0</h3>
                                     <p>
                                         Perú ante la <br>
                                         cuarta revolución industrial
                                     </p>
-                                    <a class="flex item-center"><span>IR AL EVENTO </span><img src="img/arrow_right.png" alt=""></a>
+                                    <a class="flex item-center"><span>IR AL EVENTO </span><img src="<?php bloginfo('template_directory');?>/img/arrow_right.png" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -290,7 +292,7 @@
                                         se trabajó en 4 mesas de trabajo
                                         en la elaboración de recomendaciones para ....
                                     </p>
-                                    <a href="#">SEGUIR LEYENDO <img src="img/arrow_right.png" alt="te puede interesar"></a>
+                                    <a href="#">SEGUIR LEYENDO <img src="<?php bloginfo('template_directory');?>/img/arrow_right.png" alt="te puede interesar"></a>
                                     <span>Daniel Peña Labrin - Ene 22</span>
                                 </div>
                             </div>
@@ -300,10 +302,10 @@
                         <div class="box-secundario">
                             <div class="cardInteres">
                                 <div class="whiteCard">
-                                    <img src="img/post.png" alt="te puede interesar">
+                                    <img src="<?php bloginfo('template_directory');?>/img/post.png" alt="te puede interesar">
                                     <div class="bodyWhite">                                                                            
                                         <h3>Inteligencia artificial y conductas delictógenas</h3>
-                                        <a href="#">SEGUIR LEYENDO <img src="img/arrow_right.png" alt=""></a>
+                                        <a href="#">SEGUIR LEYENDO <img src="<?php bloginfo('template_directory');?>/img/arrow_right.png" alt=""></a>
                                         <span>Daniel Peña Labrin <br> Ene 22</span>
                                     </div>
                                 </div>
@@ -312,10 +314,10 @@
                         <div class="box-secundario">
                             <div class="cardInteres">
                                 <div class="whiteCard">
-                                    <img src="img/post.png" alt="te puede interesar">
+                                    <img src="<?php bloginfo('template_directory');?>/img/post.png" alt="te puede interesar">
                                     <div class="bodyWhite">                                                                            
                                         <h3>Inteligencia artificial y conductas delictógenas</h3>
-                                        <a href="#">SEGUIR LEYENDO <img src="img/arrow_right.png" alt=""></a>
+                                        <a href="#">SEGUIR LEYENDO <img src="<?php bloginfo('template_directory');?>/img/arrow_right.png" alt=""></a>
                                         <span>Daniel Peña Labrin <br> Ene 22</span>
                                     </div>
                                 </div>
@@ -345,16 +347,16 @@
                 <p>Universidad Continental</p>
                 <div class="redes flex">
                     <a href="#">
-                        <img src="img/facebook.png" alt="facebook">
+                        <img src="<?php bloginfo('template_directory');?>/img/facebook.png" alt="facebook">
                     </a>
                     <a href="#">
-                        <img src="img/instagram.png" alt="instagram">
+                        <img src="<?php bloginfo('template_directory');?>/img/instagram.png" alt="instagram">
                     </a>
                     <a href="#">
-                        <img src="img/youtube.png" alt="youtube">
+                        <img src="<?php bloginfo('template_directory');?>/img/youtube.png" alt="youtube">
                     </a>
                     <a href="#">
-                        <img src="img/twitter.png" alt="twitter">
+                        <img src="<?php bloginfo('template_directory');?>/img/twitter.png" alt="twitter">
                     </a>
                 </div>
             </div>
@@ -362,16 +364,16 @@
                 <p>Universidad Continental <br> <span>POSGRADO</span></p>
                 <div class="redes flex">
                     <a href="#">
-                        <img src="img/facebook.png" alt="facebook">
+                        <img src="<?php bloginfo('template_directory');?>/img/facebook.png" alt="facebook">
                     </a>
                     <a href="#">
-                        <img src="img/instagram.png" alt="instagram">
+                        <img src="<?php bloginfo('template_directory');?>/img/instagram.png" alt="instagram">
                     </a>
                     <a href="#">
-                        <img src="img/youtube.png" alt="youtube">
+                        <img src="<?php bloginfo('template_directory');?>/img/youtube.png" alt="youtube">
                     </a>
                     <a href="#">
-                        <img src="img/twitter.png" alt="twitter">
+                        <img src="<?php bloginfo('template_directory');?>/img/twitter.png" alt="twitter">
                     </a>
                 </div>
             </div>
@@ -382,86 +384,7 @@
     integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
     crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
-    $('.slider-porta').slick({
-        dots: false,
-        infinite: false,
-        speed: 300,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        responsive: [
-            {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: false
-            }
-            },
-            {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-            }
-            },
-            {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-            }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-        ]
-    });
-
-    $('.slider-proye').slick({
-        dots: false,
-        infinite: false,
-        speed: 300,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        responsive: [
-            {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: false
-            }
-            },
-            {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-            }
-            },
-            {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-            }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-        ]
-    });
-
-        $('.slider-event').slick({
-            dots: false,
-            infinite: true,
-            speed: 500,
-            fade: true,
-            cssEase: 'linear'
-        });
-    </script>
+    <script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
 </body>
+<?php wp_footer(); ?>
 </html>
